@@ -12,13 +12,15 @@ export const GlobalStyles = createGlobalStyle`
   line-height: 1.5;
   color-scheme: light dark;
   --shadow-color: 0deg 0% 50%;
+  --border-radius: 5px;
 }
 
-html, 
+html,
 body {
   background: ${({ theme }) => theme.background};
   margin: 0;
-  }
+  transition: all 500ms ease-in-out;
+}
 
 a,
 a:active,
@@ -28,7 +30,16 @@ a:visited {
 }
 
 a:hover {
-  color: ${({ theme }) => theme.background};
+  color: ${({ theme }) => theme.bgBtn};
+}
+
+img {
+  border: 2px solid ${({ theme }) => theme.bgBtn};
+  padding: .2rem;
+  height: 27vmax;
+  border-radius: 50%;
+  grid-column: 1;
+  transform: scaleX(-1);
 }
 
 `;
