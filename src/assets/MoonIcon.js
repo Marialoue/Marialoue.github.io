@@ -8,7 +8,7 @@ function MoonIcon() {
       height="24"
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#01579b"
+      stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
