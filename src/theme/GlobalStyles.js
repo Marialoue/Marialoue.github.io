@@ -10,6 +10,8 @@ export const GlobalStyles = createGlobalStyle`
 :root {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
   color-scheme: light dark;
   --shadow-color: 0deg 0% 50%;
   --border-radius: 5px;
@@ -19,18 +21,15 @@ html,
 body {
   background: ${({ theme }) => theme.background};
   margin: 0;
-  transition: all 500ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
-a,
-a:active,
-a:visited {
-  color: ${({ theme }) => theme.color};
-  text-decoration: none;
+svg {
+  stroke: ${({ theme }) => theme.bgBtn};
 }
 
-a:hover {
-  color: ${({ theme }) => theme.bgBtn};
+svg:hover {
+  stroke: ${({ theme }) => theme.color};
 }
 
 img {
