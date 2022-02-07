@@ -1,11 +1,44 @@
-import styled from "styled-components";
+import React, { useState } from "react";
 
-export default styled.nav`
-  align-items: center;
-  color: #fff;
-  display: flex;
-  height: 10vh;
-  padding: 30px;
-  justify-content: space-evenly;
-  z-index: 1;
-`;
+import {
+  NavbarContainer,
+  InnerContainer,
+  LeftNav,
+  RightNav,
+  LinkItem
+} from "../theme/navStyle";
+
+import Button from "./Button";
+
+import { SunIcon } from "../assets/SunIcon";
+import { MoonIcon } from "../assets/MoonIcon";
+
+import { setLocalStorage } from "../utils/storage";
+
+const Navbar = ({ isDarkMode, setIsDarkMode }) => {
+  const switchTheme = () => {
+    setIsDarkMode(!isDarkMode);
+    setLocalStorage("isDark", !isDarkMode);
+  };
+
+  return (
+    <NavbarContainer>
+      <InnerContainer>
+        <LeftNav>
+
+          <LinkItem to="/"> Maria Karlsson</LinkItem>
+          <LinkItem to="/projects"> Projects</LinkItem>
+          <LinkItem to="/contact"> Contact</LinkItem>
+
+        </LeftNav>
+        <RightNav>
+          <Button onClick={switchTheme}>
+            {isDarkMode ? <SunIcon /> : <MoonIcon />}
+          </Button>
+        </RightNav>
+      </InnerContainer>
+    </NavbarContainer>
+  );
+};
+
+export default Navbar;
