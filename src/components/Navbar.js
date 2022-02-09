@@ -5,13 +5,13 @@ import {
   InnerContainer,
   LeftNav,
   RightNav,
-  LinkItem
-} from "../theme/navStyle";
+  LinkItem,
+} from "../theme/NavStyle";
 
 import Button from "./Button";
 
-import { SunIcon } from "../assets/SunIcon";
-import { MoonIcon } from "../assets/MoonIcon";
+import SunIcon from "../assets/icons/Sun";
+import MoonIcon from "../assets/icons/Moon";
 
 import { setLocalStorage } from "../utils/storage";
 
@@ -25,11 +25,9 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
     <NavbarContainer>
       <InnerContainer>
         <LeftNav>
-
           <LinkItem to="/"> Maria Karlsson</LinkItem>
           <LinkItem to="/projects"> Projects</LinkItem>
           <LinkItem to="/contact"> Contact</LinkItem>
-
         </LeftNav>
         <RightNav>
           <Button onClick={switchTheme}>

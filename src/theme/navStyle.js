@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.nav`
-  padding: 1rem;
+  padding: 0.5rem;
   margin: 1rem;
   height: 50px;
 `;
@@ -14,15 +14,21 @@ export const InnerContainer = styled.span`
 `;
 
 export const LeftNav = styled.span`
-  flex: 50%;
+  flex: 60%;
 `;
 
 export const RightNav = styled.span`
-  flex: 50%;
+  flex: 40%;
   display: flex;
   justify-content: flex-end;
 `;
 
 export const LinkItem = styled(Link)`
   margin: 0px 15px 0px 2px;
+  text-decoration: none;
+  color: ${({ theme }) => theme.color};
+
+  &:hover {
+    color: ${({ theme }) => theme.bgBtn};
+  }
 `;
