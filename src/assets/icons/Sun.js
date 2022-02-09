@@ -1,6 +1,4 @@
-import React from "react";
-
-function SunIcon() {
+const SunIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,6 +23,6 @@ function SunIcon() {
       <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
     </svg>
   );
-}
+};
 
-export { SunIcon };
+export default SunIcon;
