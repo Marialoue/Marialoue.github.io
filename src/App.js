@@ -12,7 +12,7 @@ import NotFound from "./routes/NotFound";
 
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
-import Container from "./components/Container";
+import { Container } from "./components/Container";
 import Footer from "./components/Footer";
 
 function App() {
@@ -26,16 +26,14 @@ function App() {
       <GlobalStyles />
       <Main>
         <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-        <Container>
-          <Routes>
-            <Route index element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <Outlet />
-        </Container>
-        <Footer />
+        <Routes>
+          <Route index element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Outlet />
+        <Footer>© Maria Karlsson 2022</Footer>
       </Main>
     </ThemeProvider>
   );
