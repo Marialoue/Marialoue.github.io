@@ -8,12 +8,10 @@ import ExternalLinkIcon from "../assets/icons/ExternalLink";
 
 const ProjectCard = ({ projectItem }) => {
 
-  console.log(projectItem.img.url)
-  
   return (
     <Card>
       <h3>{projectItem.title}</h3>
-      <img src={projectItem.img.url} alt={projectItem.img.alt} />
+      {/* <img src={projectItem.img.url} alt={projectItem.img.alt} /> */}
       <p>{projectItem.description}</p>
       <SmallContainer>
         {projectItem.stack.map((element, index) => (
@@ -25,7 +23,7 @@ const ProjectCard = ({ projectItem }) => {
           <GithubIcon />
         </Button>
         {projectItem.urls.external ? (
-          <Button href={projectItem.urls.external}>
+          <Button as="a" href={projectItem.urls.external}>
             <ExternalLinkIcon />
           </Button>
         ) : null}
