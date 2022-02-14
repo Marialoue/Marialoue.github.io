@@ -7,4 +7,5 @@ export default styled.img`
   border-radius: 50%;
   transform: scaleX(-1);
   user-select: none;
+  margin: 0 auto 0 auto;
 `;

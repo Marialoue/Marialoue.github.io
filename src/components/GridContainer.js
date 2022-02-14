@@ -6,5 +6,4 @@ export default styled.section`
   gap: 1.2rem;
   padding: 1rem;
   margin: 1rem;
-  place-items: start center;
 `;
