@@ -10,6 +10,8 @@ const PetIcon = () => {
       strokeLinecap="round"
       strokeLinejoin="round"
       className="css-i6dzq1"
+      alt="Pet icon"
+      aria-label="Pet icon"
     >
       <circle cx="4.5" cy="9.5" r="2.5"></circle>
       <circle cx="9" cy="5.5" r="2.5"></circle>
