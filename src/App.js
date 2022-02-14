@@ -7,12 +7,10 @@ import { lightTheme, darkTheme } from "./theme/themes";
 
 import About from "./routes/About";
 import Projects from "./routes/Projects";
-import Contact from "./routes/Contact";
 import NotFound from "./routes/NotFound";
 
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
-import { Container } from "./components/Container";
 import Footer from "./components/Footer";
 
 function App() {
@@ -29,7 +27,6 @@ function App() {
         <Routes>
           <Route index element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Outlet />
