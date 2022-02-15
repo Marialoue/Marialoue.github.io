@@ -3,14 +3,24 @@
   "name": "Maria Karlsson's Portfolio",
   "icons": [
     {
-      "src": "favicon.svg",
-      "sizes": "24x24",
-      "type": "image/x-icon"
+      "src": "favicon.ico",
+      "type": "ico",
+      "sizes": "24x24"
     },
     {
-      "src": "favicon.png",
+      "src": "apple-touch-icon.png",
       "type": "image/png",
-      "sizes": "48x48"
+      "sizes": "24x24"
+    },
+    {
+      "src": "android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
