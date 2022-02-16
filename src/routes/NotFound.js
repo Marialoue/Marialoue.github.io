@@ -8,7 +8,6 @@ import CodeIcon from "../assets/icons/Code";
 import {
   Container,
   MediumContainer,
-  SmallContainer,
 } from "../components/Container";
 import Button from "../components/Button";
 

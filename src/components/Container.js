@@ -6,6 +6,13 @@ export const Container = styled.section`
   margin: 0.5rem;
 `;
 
+export const MediumContainer = styled.section`
+  color: ${({ theme }) => theme.color};
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
+`;
+
 export const SmallContainer = styled.section`
   color: ${({ theme }) => theme.color};
   display: flex;
@@ -13,7 +20,7 @@ export const SmallContainer = styled.section`
   place-content: space-evenly;
   padding: 0.2rem;
   margin: 0.2rem;
-  
+
   p {
     margin: 0.2rem;
   }
