@@ -7,8 +7,7 @@ export default styled.article`
   border-radius: var(--border-radius);
   padding: 1.5rem;
   transition: ${({ theme }) => theme.transition};
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow:  ${({ theme }) => theme.boxShadowSoft};
 
   img {
     width: 20vmin;

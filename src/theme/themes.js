@@ -4,7 +4,7 @@ export const lightTheme = {
   bgSoft: "white",
   bgOnHover: "white",
   color: "#232323",
-  color70: "rgba(35, 35, 35, 0.7)",
+  color70: "rgba(35, 35, 35, 0.77)",
   color50: "rgba(35, 35, 35, 0.5)",
   color40: "rgba(35, 35, 35, 0.4)",
   bgBtn: "#01579b",
@@ -15,8 +15,9 @@ export const lightTheme = {
   fontWeight: "var(--font-weight)",
   letterSpacing: "inherit",
   boxShadow: "var(--box-shadow)",
+  boxShadowSoft: "var(--box-shadow-soft)",
   border: "1px solid transparent",
-  transition: "var(--transition)"
+  transition: "var(--transition)",
 };
 
 export const darkTheme = {
@@ -37,5 +38,5 @@ export const darkTheme = {
   letterSpacing: "var(--letter-spacing)",
   boxShadow: "var(--box-shadow)",
   border: "1px solid #d18547",
-  transition: "var(--transition)"
+  transition: "var(--transition)",
 };
