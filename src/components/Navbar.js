@@ -9,6 +9,7 @@ import {
   MobileNavbar,
   MobileNavbarLink,
   MenuButton,
+  MobileInner,
 } from "../theme/NavStyle";
 
 import Button from "./Button";
@@ -22,11 +23,12 @@ import LinkedInIcon from "../assets/icons/LinkedIn";
 import MailIcon from "../assets/icons/Mail";
 
 import { setLocalStorage } from "../utils/storage";
+import HomeIcon from "../assets/icons/Home";
+import CodeIcon from "../assets/icons/Code";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
-  
   const [isExtended, setIsExtended] = useState(false);
-  
+
   const switchTheme = () => {
     setIsDarkMode(!isDarkMode);
     setLocalStorage("isDark", !isDarkMode);
@@ -72,34 +74,41 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           </Button>
         </RightNav>
       </InnerContainer>
+      {/* show if screen is smaller than 700px */}
       {isExtended && (
         <MobileNavbar>
-          <MobileNavbarLink to="/"> Maria Karlsson</MobileNavbarLink>
-          <MobileNavbarLink to="/projects"> Projects</MobileNavbarLink>
-          <Button
-            as="a"
-            aria-label="Send an email"
-            href="mailto:maria.lo.karlsson@gmail.com"
-          >
-            <MailIcon />
-          </Button>
-          <Button
-            as="a"
-            aria-label="Find me on LinkedIn"
-            href="https://www.linkedin.com/in/maria-karlsson-3854b16a/"
-          >
-            <LinkedInIcon />
-          </Button>
-          <Button
-            as="a"
-            aria-label="Find me on Github"
-            href="https://github.com/Marialoue"
-          >
-            <GithubIcon />
-          </Button>
-          <Button onClick={switchTheme}>
-            {isDarkMode ? <SunIcon /> : <MoonIcon />}
-          </Button>
+          <MobileInner>
+            <MobileNavbarLink to="/">
+              <HomeIcon />
+            </MobileNavbarLink>
+            <MobileNavbarLink to="/projects">
+              <CodeIcon />
+            </MobileNavbarLink>
+            <MobileNavbarLink
+              as="a"
+              aria-label="Send an email"
+              href="mailto:maria.lo.karlsson@gmail.com"
+            >
+              <MailIcon />
+            </MobileNavbarLink>
+            <MobileNavbarLink
+              as="a"
+              aria-label="Find me on LinkedIn"
+              href="https://www.linkedin.com/in/maria-karlsson-3854b16a/"
+            >
+              <LinkedInIcon />
+            </MobileNavbarLink>
+            <MobileNavbarLink
+              as="a"
+              aria-label="Find me on Github"
+              href="https://github.com/Marialoue"
+            >
+              <GithubIcon />
+            </MobileNavbarLink>
+            <Button onClick={switchTheme}>
+              {isDarkMode ? <SunIcon /> : <MoonIcon />}
+            </Button>
+          </MobileInner>
         </MobileNavbar>
       )}
     </NavbarContainer>

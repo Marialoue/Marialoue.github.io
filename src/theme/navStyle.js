@@ -56,9 +56,7 @@ export const MenuButton = styled(Button)`
 `;
 
 export const MobileNavbar = styled.nav`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border-radius: 5px;
 
   @media (min-width: 700px) {
     display: none;
@@ -73,10 +71,18 @@ export const MobileNavbar = styled.nav`
   }
 `;
 
+export const MobileInner = styled.span`
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 0.5rem;
+`;
+
 export const MobileNavbarLink = styled(Link)`
-  margin: 0px 15px 0px 2px;
   text-decoration: none;
-  color: ${({ theme }) => theme.color};
+  color: ${({ theme }) => theme.color70}; 
+  // #232323d4
+  // #f5f5f5bf
 
   &:hover {
     color: ${({ theme }) => theme.bgBtn};

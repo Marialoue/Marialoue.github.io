@@ -19,6 +19,9 @@ export const GlobalStyles = createGlobalStyle`
   0 4px 4px rgba(0,0,0,0.11), 
   0 8px 8px rgba(0,0,0,0.11);
   
+  --box-shadow-soft: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, 
+  rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
   --border-radius: 5px;
   --letter-spacing: 0.02ch;
   --font-weight-multiplyer: .85;
@@ -30,7 +33,7 @@ html,
 body {
   background: ${({ theme }) => theme.background};
   margin: 0;
-  transition: var(--transition);
+  // transition: var(--transition);
 }
 
 `;
