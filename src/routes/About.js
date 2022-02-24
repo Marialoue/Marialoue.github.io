@@ -18,15 +18,17 @@ const About = () => {
         <Image role="img" src={Profile} alt="Maria Karlsson" tabIndex="0" />
         <SmallContainer>
           <p>
-            I started my tech journey 2019, when I applyed to become a system
-            developer within IoT. Even though I enjoyed learning about hardware
-            and network communication, I found a passion for web development,
-            accessibility and UX.
+            I started my tech journey 2019, when I applied to become a system
+            developer within IoT. Even though I enjoyed learning about hardware,
+            network communication, databases and automation, I found a passion
+            for web development, accessibility and UI. Currently my main focus
+            has been working with React, but I'm always interested in learning
+            more about other frontend frameworks.
           </p>
           <p>
             When I'm not working on a coding project, I enjoy spending time on
             personal development and learning new skills. I am a big fan of
-            outdoor activities, and am always up for a good book recomendation.
+            outdoor activities, and am always up for a good book recommendation.
           </p>
           <SmallContainer>
             <PinIcon />
