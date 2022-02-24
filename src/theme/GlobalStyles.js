@@ -26,14 +26,14 @@ export const GlobalStyles = createGlobalStyle`
   --letter-spacing: 0.02ch;
   --font-weight-multiplyer: .85;
   --font-weight: 500;
-  --transition: all 300ms ease-in-out;
+  --transition: all 450ms ease-in-out;
 }
 
 html,
 body {
   background: ${({ theme }) => theme.background};
   margin: 0;
-  // transition: var(--transition);
+  transition: var(--transition);
 }
 
 `;
