@@ -30,7 +30,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Outlet />
-        <Footer>© Maria Karlsson 2022</Footer>
+        <Footer />
       </Main>
     </ThemeProvider>
   );
