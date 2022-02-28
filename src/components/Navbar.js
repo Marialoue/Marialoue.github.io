@@ -79,31 +79,31 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         <MobileNavbar>
           <MobileInner>
             <MobileNavbarLink to="/">
-              <HomeIcon />
+              Maria Karlsson <HomeIcon />
             </MobileNavbarLink>
             <MobileNavbarLink to="/projects">
-              <CodeIcon />
+              Projects <CodeIcon />
             </MobileNavbarLink>
             <MobileNavbarLink
               as="a"
-              aria-label="Send an email"
+              aria-label="Send me an email"
               href="mailto:maria.lo.karlsson@gmail.com"
             >
-              <MailIcon />
+              Say hi <MailIcon />
             </MobileNavbarLink>
             <MobileNavbarLink
               as="a"
-              aria-label="Find me on LinkedIn"
+              aria-label="Connect on LinkedIn"
               href="https://www.linkedin.com/in/maria-karlsson-3854b16a/"
             >
-              <LinkedInIcon />
+              Connect <LinkedInIcon />
             </MobileNavbarLink>
             <MobileNavbarLink
               as="a"
               aria-label="Find me on Github"
               href="https://github.com/Marialoue"
             >
-              <GithubIcon />
+              View repos <GithubIcon />
             </MobileNavbarLink>
             <Button onClick={switchTheme}>
               {isDarkMode ? <SunIcon /> : <MoonIcon />}
