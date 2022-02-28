@@ -17,7 +17,6 @@ export const SmallContainer = styled.section`
   color: ${({ theme }) => theme.color};
   display: flex;
   flex-wrap: wrap;
-  place-content: space-evenly;
   padding: 0.2rem;
   margin: 0.2rem;
 

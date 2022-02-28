@@ -7,7 +7,11 @@ export default styled.article`
   border-radius: var(--border-radius);
   padding: 1.5rem;
   transition: ${({ theme }) => theme.transition};
-  box-shadow:  ${({ theme }) => theme.boxShadowSoft};
+  box-shadow: ${({ theme }) => theme.boxShadowSoft};
+
+  section {
+    place-content: space-evenly;
+  }
 
   img {
     width: 20vmin;
