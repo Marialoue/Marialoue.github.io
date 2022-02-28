@@ -56,18 +56,11 @@ export const MenuButton = styled(Button)`
 `;
 
 export const MobileNavbar = styled.nav`
-  border-radius: 5px;
+  border-radius: var(--border-radius);
+  padding: 0 1rem 0 1rem;
 
   @media (min-width: 700px) {
     display: none;
-  }
-
-  a {
-    margin-bottom: 0.3rem;
-
-    &:hover: {
-      background: ${({ theme }) => theme.bgOnHover};
-    }
   }
 `;
 
@@ -75,16 +68,25 @@ export const MobileInner = styled.span`
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin-right: 0.5rem;
 `;
 
 export const MobileNavbarLink = styled(Link)`
+  border-radius: var(--border-radius);
   text-decoration: none;
-  color: ${({ theme }) => theme.color70}; 
-  // #232323d4
-  // #f5f5f5bf
+  text-align: right;
+  width: calc(100% - 10%);
+  padding: 0.3rem 0.3rem 0.3rem 0;
+  color: ${({ theme }) => theme.color70};
 
   &:hover {
     color: ${({ theme }) => theme.bgBtn};
+    background: linear-gradient(to left, ${({ theme }) => theme.bgOnHover}, transparent);
+  }
+
+  @media (any-hover: hover) and (any-pointer: fine) {
+    a {
+      color: ${({ theme }) => theme.bgBtn};
+      background: linear-gradient(to left, ${({ theme }) => theme.bgOnHover}, transparent);
+    }
   }
 `;
