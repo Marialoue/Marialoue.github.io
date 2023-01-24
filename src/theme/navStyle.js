@@ -78,15 +78,36 @@ export const MobileNavbarLink = styled(Link)`
   padding: 0.3rem 0.3rem 0.3rem 0;
   color: ${({ theme }) => theme.color70};
 
-  &:hover {
-    color: ${({ theme }) => theme.bgBtn};
-    background: linear-gradient(to left, ${({ theme }) => theme.bgOnHover}, transparent);
+  svg {
+    margin-bottom: -2px;
   }
 
-  @media (any-hover: hover) and (any-pointer: fine) {
-    a {
-      color: ${({ theme }) => theme.bgBtn};
-      background: linear-gradient(to left, ${({ theme }) => theme.bgOnHover}, transparent);
+  &:hover {
+    :before {
+      height: 1px;
     }
+
+    :after {
+      width: 100%;
+      height: 1px;
+    }
+
+    color: ${({ theme }) => theme.bgBtn};
+    font-weight: 300;
+    transition: all 200ms ease-out;
   }
+
+  &:before {
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: relative;
+    right: 0px;
+    width: 0;
+    background-color: ${({ theme }) => theme.bgBtn};
+    transition: all 0.3s;
+  }
+
 `;

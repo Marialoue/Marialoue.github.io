@@ -16,10 +16,9 @@ export const lightTheme = {
   letterSpacing: "inherit",
   boxShadow: "var(--box-shadow)",
   boxShadowSoft: "var(--box-shadow-soft)",
-  border: "1px solid transparent",
   transition: "var(--transition)",
 };
-
+ 
 export const darkTheme = {
   background: "rgb(35, 35, 35)",
   bg40: "rgba(35, 35, 35, 0.4)",
@@ -37,6 +36,6 @@ export const darkTheme = {
   fontWeight: "calc(var(--font-weight) * var(--font-weight-multiplyer))",
   letterSpacing: "var(--letter-spacing)",
   boxShadow: "var(--box-shadow)",
-  border: "1px solid #d18547",
+  border: "0.5px solid #d18547",
   transition: "var(--transition)",
 };

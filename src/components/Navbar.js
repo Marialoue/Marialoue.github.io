@@ -58,7 +58,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           <Button
             as="a"
             aria-label="Find me on LinkedIn"
-            href="https://www.linkedin.com/in/maria-karlsson-3854b16a/"
+            href="https://www.linkedin.com/in/maria-lo-karlsson/"
           >
             <LinkedInIcon />
           </Button>

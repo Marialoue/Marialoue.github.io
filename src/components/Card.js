@@ -24,7 +24,7 @@ export default styled.article`
 
   &:hover {
     background: ${({ theme }) => theme.bgOnHover};
-    // border: ${({ theme }) => theme.border};
+    border: ${({ theme }) => theme.border};
     box-shadow: ${({ theme }) => theme.boxShadow};
   }
 `;
