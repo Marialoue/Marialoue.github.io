@@ -23,7 +23,7 @@ const About = () => {
             network communication, databases and automation, I found a passion
             for web development, accessibility and UI. Currently my main focus
             has been working with React, but I'm always interested in learning
-            more about other frontend frameworks.
+            more about other frameworks.
           </p>
           <p>
             When I'm not working on a coding project, I enjoy spending time on
